@@ -1,0 +1,46 @@
+# --- Server ---
+NODE_ENV=development
+PORT=3000
+LOG_LEVEL=info
+
+# --- Deriv API (values to be confirmed during Phase 1 Pre-Build Verification) ---
+DERIV_APP_ID_DEMO=
+DERIV_APP_ID_LIVE=
+DERIV_API_TOKEN_DEMO=
+DERIV_API_TOKEN_LIVE=
+DERIV_WS_ENDPOINT=
+DERIV_AUTH_MODE=              # api_token | otp_session — confirm in Phase 1
+
+# --- Database ---
+DATABASE_URL=postgres://user:password@localhost:5432/trading_platform
+DB_SECRET_ENCRYPTION_KEY=      # used for column-level encryption of strategy secrets
+
+# --- Queue ---
+REDIS_URL=redis://localhost:6379
+QUEUE_MAX_DEPTH=1000
+QUEUE_ALERT_EXPIRATION_SECONDS=60
+
+# --- Webhook ---
+WEBHOOK_CLOCK_SKEW_TOLERANCE_SECONDS=30
+WEBHOOK_SCHEMA_SUPPORTED_VERSIONS=1
+
+# --- Idempotency ---
+IDEMPOTENCY_RETENTION_DAYS=7
+
+# --- Risk / Demo Validation ---
+DEMO_VALIDATION_MIN_DAYS=14
+DEMO_VALIDATION_MIN_TRADES=30
+
+# --- Circuit Breaker ---
+CIRCUIT_BREAKER_FAILURE_THRESHOLD=5
+
+# --- Reconciliation ---
+RECONCILIATION_INTERVAL_MINUTES=5
+TRADE_STUCK_STATE_THRESHOLD_SECONDS=30
+
+# --- Telegram ---
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=
+
+# --- Time Sync ---
+CLOCK_DRIFT_THRESHOLD_MS=2000
