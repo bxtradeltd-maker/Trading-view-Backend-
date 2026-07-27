@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@trading-platform/domain": ["packages/domain/src"],
+      "@trading-platform/application": ["packages/application/src"],
+      "@trading-platform/infrastructure": ["packages/infrastructure/src"],
+      "@trading-platform/shared": ["packages/shared/src"]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@trading-platform/domain",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Domain layer: entities, value objects, domain events, enums. Zero external dependencies by design.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {}
+}

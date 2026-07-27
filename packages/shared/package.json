@@ -1,0 +1,9 @@
+{
+  "name": "@trading-platform/shared",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cross-cutting utility types shared by all layers (no business or infrastructure meaning of their own).",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {}
+}
